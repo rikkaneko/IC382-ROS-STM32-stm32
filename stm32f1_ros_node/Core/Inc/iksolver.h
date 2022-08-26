@@ -17,8 +17,11 @@ std::pair<int,int> twin_motors_rotations;
 
 
 // Wheel physical parameters in meters
-double wheel_seperation = 0.47 * 10;
+double wheel_seperation = 0.47;
 double max_velocity = 15;
+double linear_gain = 180;
+double angular_gain = 2;
+double difference_gain = 0.8;
 
 // Wheel speed in m/s and rad/s
 double motor1_v = 0, motor2_v = 0;
@@ -36,14 +39,14 @@ uint32_t __abs(float val) { return val>0? val: -val; }
 void twin_drive_ik(double linear_x,double angular_z)
 {
 	// self rolation
-	float vl = linear_x - wheel_seperation * angular_z / 2;
-	float vr = linear_x + wheel_seperation * angular_z / 2;
+	float vl = difference_gain * linear_gain * (linear_x - angular_gain * wheel_seperation * angular_z / 2 );
+	float vr = linear_gain * (linear_x + angular_gain * wheel_seperation * angular_z / 2 );
 	
 	// Output 
-	twin_motors_duty_cycle.first = __abs((vl/max_velocity)*3200);
-	twin_motors_duty_cycle.second = __abs((vr/max_velocity)*3200);
+	twin_motors_duty_cycle.first = __abs((vl/max_velocity)*100);
+	twin_motors_duty_cycle.second = __abs((vr/max_velocity)*100);
 	
-	twin_motors_rotations.first = (vl >= 0)? ((vl > 0)? 0: 2): 1;
+	twin_motors_rotations.first = (vl >= 0)? ((vl > 0)? 1: 2): 0;
 	twin_motors_rotations.second =  (vr >= 0)? ((vr > 0)? 0: 2): 1;
 }
 

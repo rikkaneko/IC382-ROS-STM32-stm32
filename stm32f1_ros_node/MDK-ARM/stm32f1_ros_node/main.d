@@ -44,4 +44,4 @@ stm32f1_ros_node\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usb
 stm32f1_ros_node\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
 stm32f1_ros_node\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
 stm32f1_ros_node\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
-stm32f1_ros_node\main.o: ..\RosLibs\ros_main.h
+stm32f1_ros_node\main.o: ../RosLibs/ros_main.h

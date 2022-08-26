@@ -558,12 +558,12 @@ ARM Macro Assembler    Page 9
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=stm32f1_ros_node\startup_stm32f103xe.d -ostm32f1_ros_node\startup_
-stm32f103xe.o -I.\RTE\_stm32f1_ros_node -IC:\Users\User\AppData\Local\Arm\Packs
-\ARM\CMSIS\5.8.0\CMSIS\Core\Include -IC:\Users\User\AppData\Local\Arm\Packs\Kei
-l\STM32F1xx_DFP\2.3.0\Device\Include --predefine="__EVAL SETA 1" --predefine="_
-_UVISION_VERSION SETA 536" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_HD
- SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32f103xe.lst startup_stm3
-2f103xe.s
+stm32f103xe.o -I.\RTE\_stm32f1_ros_node -IC:\Users\icadmin\AppData\Local\Arm\Pa
+cks\ARM\CMSIS\5.9.0\CMSIS\Core\Include -IC:\Users\icadmin\AppData\Local\Arm\Pac
+ks\Keil\STM32F1xx_DFP\2.4.0\Device\Include --predefine="__EVAL SETA 1" --predef
+ine="__UVISION_VERSION SETA 536" --predefine="_RTE_ SETA 1" --predefine="STM32F
+10X_HD SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32f103xe.lst startu
+p_stm32f103xe.s
 
 
 

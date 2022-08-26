@@ -60,8 +60,16 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define MOTOR4_IN1_Pin GPIO_PIN_2
+#define MOTOR4_IN1_GPIO_Port GPIOE
 #define CORE_LED1_Pin GPIO_PIN_5
 #define CORE_LED1_GPIO_Port GPIOE
+#define MOTOR4_IN2_Pin GPIO_PIN_6
+#define MOTOR4_IN2_GPIO_Port GPIOE
+#define MOTOR3_IN1_Pin GPIO_PIN_4
+#define MOTOR3_IN1_GPIO_Port GPIOF
+#define MOTOR3_IN2_Pin GPIO_PIN_5
+#define MOTOR3_IN2_GPIO_Port GPIOF
 #define MOTOR1_IN2_Pin GPIO_PIN_6
 #define MOTOR1_IN2_GPIO_Port GPIOF
 #define MOTOR1_IN1_Pin GPIO_PIN_7
@@ -70,18 +78,30 @@ void Error_Handler(void);
 #define MOTOR2_IN2_GPIO_Port GPIOF
 #define MOTOR2_IN1_Pin GPIO_PIN_9
 #define MOTOR2_IN1_GPIO_Port GPIOF
-#define MOTOR2_ENC_A_Pin GPIO_PIN_0
-#define MOTOR2_ENC_A_GPIO_Port GPIOA
-#define MOTOR2_ENC_B_Pin GPIO_PIN_1
-#define MOTOR2_ENC_B_GPIO_Port GPIOA
-#define MOTOR1_PWM_Pin GPIO_PIN_13
-#define MOTOR1_PWM_GPIO_Port GPIOE
-#define MOTOR1_ENC_A_Pin GPIO_PIN_12
-#define MOTOR1_ENC_A_GPIO_Port GPIOD
-#define MOTOR1_ENC_B_Pin GPIO_PIN_13
-#define MOTOR1_ENC_B_GPIO_Port GPIOD
-#define MOTOR2_PWM_Pin GPIO_PIN_8
-#define MOTOR2_PWM_GPIO_Port GPIOC
+#define MOTOR1_PWM_Pin GPIO_PIN_0
+#define MOTOR1_PWM_GPIO_Port GPIOA
+#define MOTOR2_PWM_Pin GPIO_PIN_1
+#define MOTOR2_PWM_GPIO_Port GPIOA
+#define MOTOR3_PWM_Pin GPIO_PIN_2
+#define MOTOR3_PWM_GPIO_Port GPIOA
+#define MOTOR4_PWM_Pin GPIO_PIN_3
+#define MOTOR4_PWM_GPIO_Port GPIOA
+#define MOTOR2_ENCODER_A_Pin GPIO_PIN_6
+#define MOTOR2_ENCODER_A_GPIO_Port GPIOA
+#define MOTOR2_ENCODER_B_Pin GPIO_PIN_7
+#define MOTOR2_ENCODER_B_GPIO_Port GPIOA
+#define MOTOR1_ENCODER_A_Pin GPIO_PIN_9
+#define MOTOR1_ENCODER_A_GPIO_Port GPIOE
+#define MOTOR1_ENCODER_B_Pin GPIO_PIN_11
+#define MOTOR1_ENCODER_B_GPIO_Port GPIOE
+#define MOTOR3_ENCODER_A_Pin GPIO_PIN_12
+#define MOTOR3_ENCODER_A_GPIO_Port GPIOD
+#define MOTOR3_ENCODER_B_Pin GPIO_PIN_13
+#define MOTOR3_ENCODER_B_GPIO_Port GPIOD
+#define MOTOR4_ENCODER_A_Pin GPIO_PIN_6
+#define MOTOR4_ENCODER_A_GPIO_Port GPIOC
+#define MOTOR4_ENCODER_B_Pin GPIO_PIN_7
+#define MOTOR4_ENCODER_B_GPIO_Port GPIOC
 #define EXTENSION_LED3_Pin GPIO_PIN_0
 #define EXTENSION_LED3_GPIO_Port GPIOD
 #define EXTENSION_LED4_Pin GPIO_PIN_1
@@ -101,5 +121,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
